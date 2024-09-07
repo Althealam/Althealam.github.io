@@ -228,6 +228,12 @@ strong {
     color: #0077b6;
 }
 
+strong-black{
+    color: black;
+    font-weight: 800;
+}
+
+
 /* 将所有链接的默认颜色设置为黑色，移除下划线 */
 a {
     color: #000000;
