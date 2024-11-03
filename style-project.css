@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.header {
+    background-color: #005f87;
+    color: #ffffff;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    max-width: calc(50% - 40px);
+}
+
+.section h2 {
+    color: #005f87;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.section p, .section ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 5px;
+}
+
+.core-code-section {
+    flex-basis: 100%;
+    background-color: #ffffff; /* 背景颜色为白色 */
+    padding: 15px;
+    border-radius: 8px;
+    overflow: auto;
+    white-space: pre-wrap;
+    margin-top: 10px;
+}
+
+.core-code-section h2 {
+    color: #005f87;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.core-code-section a {
+    color: #005f87;
+    text-decoration: none;
+    display: block; /* 使链接独占一行 */
+}
+
+.core-code-section p, .core-code-section ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.core-code-section a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #005f87;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .section, .core-code-section {
+        max-width: 100%;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+}
